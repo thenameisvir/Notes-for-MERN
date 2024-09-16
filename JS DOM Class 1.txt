@@ -1,0 +1,34 @@
+1) Window - Window is a global object , which can be accessed from anywhere no scope needed, this is created by browser , it represents a browser window
+ - when you open a browser and go for something and then a window appears , that window in responsible by window which is this we are studying 
+
+Window includes - DOM , BOM , JS Core functions (for example  = window.console.log("hue"); it will run in the console 
+
+(BOM) Browser Object Model- Content is being managed by DOM and on the other hand apart from content like html , if you or your java script wants to communicate with the browser on the matter apart from content then BOM is used.
+
+
+
+
+2) DOM - Document Object Model
+
+a) document;
+- Document is when i convert all the html code into an object.
+for example if you want to access whole code of the code help website then you can just write document and whole html will be convert into the object , specifically if      you want to just make the body of that particular website into an object just write (document.body) simple.
+
+<html> initially  characters are being changed into tags then tags are changed into tokens by tokeniser and then those tokens are being changed into nodes and then after reaching Nodes your DOM gets ready. 
+
+1) getElementbyID - used to fetch an element present in the code.  = document.getElementbyID('');
+2) getElementsByClassName - used to fetch the elements having same class = document.getElementsByClassName('.');
+3) First select the particular section then go to console and write $0 in it , whichever you selected previously will be showed you on the console and also we can ecuate it aswell like (  let para = $0 ) and then whole content will be copied into the para .
+4) querySelector - it is also used to fetch class,id,elements and same operations you can perform in it aswell.
+
+
+b) Updating some Existing Content;
+
+1) .innerHtml - It is being used to fetch/gets and element or it can return all of it's decendents to you & it can also set the content of html.
+2) .textContent - It is being used to manupulate(get/set) the textual content of the website  - it does not render the html tag , it just show the actual content whichever is there. + hidden text also gets printed.
+
+
+c) Creating an element by ourself; - just a more simple term in which you creates an element by yourself acc to the situation.
+
+
+d) You can manupulate color aswell by using java script , no need to mug up the syntaxes just , understand the basic knowledge of it.
