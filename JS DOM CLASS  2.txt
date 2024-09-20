@@ -1,0 +1,42 @@
+(JS DOM CLASS - 2)
+
+BROWSER EVENTS:
+---------------
+
+a) Event Target - It is an interface implemented by objects that can receive Events and may have listeners for them.
+listeners - reaction after receiving an action.
+
+:) Nodes inherit from event target and element inherit from the nodes.
+
+3 methods in Event Target 
+a) Add Event Listener 
+b) Remove Event Listener
+c) Dispatch Event 
+
+Pseudocode for Event Listener 
+<event-target>. addEventListner (event to listen for),(function to run when event happens)
+
+
+
+:) Three phases are there for the Eventlistener  first one is capturing phase , in which we find the particular event , second one is at target phase in which we gets the target and furthermore do the process and third one is bubbling phase in which we go back to the first.
+
+:) Event Listener gets executed normally in bubbly phase :
+
+
+:) The Event Object - When an Event occurs , addEventListener function creates an object which contains lots of information. 
+
+// Accessing individual paragraphs even contrasting they are in the div tag:
+
+let mydiv = document.createElement('div');
+function lundlelo(event) {
+    console.log(event.target.textContent);
+}
+for (let i = 1; i <= 100; i++) {
+    let newelement = document.createElement('p');
+    newelement.textContent = 'This is para ' + i;
+
+    newelement.addEventListener('click',lundlelo);
+
+    mydiv.appendChild(newelement);
+}
+document.body.appendChild(mydiv); // Append to body or another element
