@@ -1,0 +1,54 @@
+(JS DOM CLASS - 3 )
+
+a) Reflow - When we add a new element in which the mathematical calculations are being done for example , what are the margins and dimension etc , so these calculations takes time and the whole process which has been termed behind these terms is Reflow.
+
+b) Repaint - After all the calculations are being done and you have the new layout of the screen and to show it on the screen pixel by pixel , this process is known as Repaint.
+
+// adding 100 para
+const t1 = performance.now();
+for(let i=1;i<=100;i++){
+    let newElement = document.createElement('p');
+    newElement.textContent = 'This is para ' + i;
+
+    document.body.appendChild(newElement);
+}
+console.log(t1);
+const t2 = performance.now();
+console.log(t2-t1);
+// optimising it
+
+let myDiv = document.createElement('div');
+for(let i=1;i<=100;i++){
+    let newE = document.createElement('p');
+    newE.textContent = 'This is second' + i;
+
+    myDiv.appendChild(newE);
+}
+
+document.body.appendChild(myDiv);
+console.log("Madhur");
+console.log("Gaurav bhai ");
+
+In this code the second one is a good practice in which it is decreasing the complexity of the code and also decreasing the time of the buffering of the website.
+
+
+IMPORTANT____________
+
+Document Fragment - It is a light weight document object which doesn't contain any reflow or any repaint on adding upon it for any thing , so by adding this which is document fragment , no reflow and no repaint will occur for the paragraph tag or the div tag  , only one time will be there the concept of reflow and repaint when the document fragment will execute.
+ - virtual DOM ----- It is the best practice 
+
+
+Java script is a single threaded language - processing one command at a time , they are synchronous languages
+
+
+// Call Stack //
+
+----------------------------------------------------------------------Event Loop----------------------------------------------------------------------------
+
+ Event loop is a concept which is very important and it is as follows ki : untill unless your call stack is empty , the functions which are in the queue are not gonna take place , first your call stack will get empty then after that only, you will be able to do further process , It is a loop between call stack and the brpwser and the queue.
+
+
+
+
+setTimeOut() - In this you can give a certain amount of time to your code , for example you've given 5000 ms , so after 5000 ms your code will get executed automatically.
+though it has having no guarantee coz , untll event loop concept doesn't gets completed , which is , if your call stack doesn't gets empty your this code which is setTimeOut() has to wait.  
