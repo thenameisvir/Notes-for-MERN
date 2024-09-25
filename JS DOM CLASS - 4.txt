@@ -1,0 +1,22 @@
+JS DOM CLASS - 4
+
+API - Application Programming Interface , is an interface which acts as a communicator between two or more interfaces, here fetching and retrieving information takes place.
+
+VVI) - Very Important
+
+PROMISES - If you want to execute some parallel things in the background we use promises, again  - If you want to execute parallel things in java script in the background we use promises, it is an async code.
+
+An async Promise : 
+let merapromise = new Promise(function(resolve,reject){
+    setTimeout(() => {
+        console.log('I am inside Promise');
+    }, 5000);
+    resolve(1998);
+});
+
+console.log('first');
+
+
+Async Await - It is a special syntax used to work with promises. 
+
+Fetch API -  
